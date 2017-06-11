@@ -1,9 +1,10 @@
 var ball;
 
 function setup() {
-  ball = new Ball();
   createCanvas(800, 600);
   background(0);
+  translate(width / 2, height);
+  ball = new Ball();
 }
 
 function draw() {
