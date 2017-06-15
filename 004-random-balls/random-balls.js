@@ -9,7 +9,7 @@ function draw() {
   var x = random(width);
   var y = random(height);
 
-  var rS = random(5, 50);
+  var rS = random(1, 50);
 
   var r = random(255);
   var g = random(100);
