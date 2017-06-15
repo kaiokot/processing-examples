@@ -2,7 +2,7 @@ var r = 0;
 var t = 0;
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(screen.width, screen.height);
   background(0);
 }
 
