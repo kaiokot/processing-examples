@@ -17,4 +17,7 @@ void draw(){
   noStroke();
   fill(c);
   ellipse(x,y,diameter,diameter);
+  
+  // adding image preview
+  image(img, 0 ,0 , width / 5 , height /5);
 }
