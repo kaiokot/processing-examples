@@ -12,7 +12,7 @@ void draw(){
   float y = random(height);  
   color c  = img.get(int(x),int(y)); 
 
-  float diameter= random(8,32);
+  float diameter= random(2,16);
   
   noStroke();
   fill(c);
