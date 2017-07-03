@@ -19,23 +19,23 @@ class Walker
    void step()
    {
      /*
-     int choice = int(random(4));
+     float prob = random(1);
           
-      if (choice == 0) {
+      if (prob < 0.4) {
         x++;
-      } else if (choice == 1) {
+      } else if (prob  < 0.6) {
         x--;
-      } else if (choice == 2) {
+      } else if (prob < 0.8) {
         y++;
       } else {
         y--;
       }
       */
       
-      int stepX = int(random(3))-1;  
-      int stepY = int(random(3))-1;
-       // float stepX = random(-1,1);
-        //float stepY = random(-1,1);
+      
+     
+        float stepX = random(-1,1);
+        float stepY = random(-1,1);
         
         x += stepX;
         y += stepY;
