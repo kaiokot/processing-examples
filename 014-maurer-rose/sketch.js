@@ -6,11 +6,12 @@ var n;
 var d;
 var k = 120;
 var interval;
+var canvas;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  canvas = createCanvas(window.innerWidth, window.innerHeight);
   background(0)
-  interval = 100;
+  interval = 120;
 }
 
 function draw() {
@@ -21,17 +22,17 @@ function draw() {
     d = int(random(1, 359));
 
     fill(255);
-    
+
     text("Random Maurer Rose", height / 2, 20);
-    
+
     text("n:" + n, 10, 30);
     text("d:" + d, 10, 40);
 
     text("algorithm A:", 150, 50);
     text("algorithm B:", 400, 50);
-    
+
     maurerRoseAlgA(n, d, 400, 350);
-    
+
     maurerRoseAlgB(n, d, 900, 350);
   }
 
@@ -130,4 +131,13 @@ function maurerRoseAlgB(n, d, xxx, yyy) {
     }
   }
 }
+
+window.onresize = function () {
+  console.log('onresize');
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  canvas.size(w, h);
+  width = w;
+  height = h;
+};
 
